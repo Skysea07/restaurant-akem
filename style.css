@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+   font-family: "Plus Jakarta Sans", serif;
+   background-color: #F8F5F0;
+}
+
+/*===========================
+HEADER
+==================================*/
+
+.nav-bar{
+    width: 100%;
+    height: 85px;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 5%;
+
+    box-sizing: border-box;
+
+    background-color: #121212;
+    
+}
+
+.logo-container{
+    display: inline flex;
+}
+
+.logo-container:hover{
+    transform: scale(1.1);
+}
+
+.en-ligne{
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    width: fit-content;
+    padding: 14px 24px;
+
+    gap: 30px;
+}
+
+.nav-bar a, .cta a{
+    text-decoration: none;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.nav-bar a.active{
+    color: #C5A059;
+}
+
+.nav-bar a:hover{
+    color: #C5A059;
+}
+
+.cta{
+    font-size: 13px;
+    font-weight: bold;
+    background-color: #9E3B27;
+    color: #F8F5F0;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    padding: 10px 24px;
+}
+
+.reserver-nav:hover, .transform:hover{
+    transform: scale(1.1);
+}
+
+/*=========================
+SECTION HERO
+==========================*/
+
+.hero{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(20,20,20,0.65), rgba(20,20,20,0.65)), url('images/image-hero.avif');
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;
+
+    align-items: center;
+    text-align: center;
+
+    color: #F8F5F0;
+
+    display: flex;
+    flex-direction: column;
+
+    padding-top: 150px;
+}
+
+.el-container{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    width: 50%;
+
+    gap: 17px;
+}
+
+.exp{
+    font-weight: 700;
+    font-size: 15px;
+    border-radius: 50px;
+}
+
+.vitre{
+    background: rgba(106, 108, 112, 0.68);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+
+    border: 1px solid #C5A059;
+    
+    color: #C5A059;
+    
+    text-transform: uppercase;
+
+    width: fit-content; 
+    padding: 10px 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vitre a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #C5A059;
+}
+
+.transform{
+    font-family: "Cormorant Garamond", serif;
+}
+
+.hover:hover{
+    background-color: #C5A059;
+    
+}
+
+.vitre a:hover{
+    color: #F8F5F0;
+}
+
+.message{
+    width: fit-content;
+    padding: 10px 24px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    color: #F8F5F0;
+    line-height: 1.6;
+}
+
+h1{
+     font-family: "Playfair Display", serif;
+     font-weight: 400;
+     font-style: normal;
+     font-size: 56px;
+}
+
+h1 span{
+    font-style: italic;
+}
+
+span{
+    color: #C5A059;
+}
+
+.message p {
+    font-size: 16px;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1.76;
+}
+
+.parcours{
+    display:flex;
+    flex-direction: column;
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.el-container div:nth-child(4){
+    border-top: 2px solid #C5A059;
+}
+
+.en-ligne div > div:nth-child(1){
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "Cormorant Garamond", serif;
+}
+
+.en-ligne div:nth-child(2){
+    text-transform: uppercase;
+    color: #F8F5F0;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "Cormorant Garamond", serif;
+}
+
+/*============================
+SECTION ESSEMCE
+============================*/
+
+.essence{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    gap: 30px;
+
+    padding-top: 90px;
+    padding-bottom: 90px;
+
+    justify-content: center;
+    text-align: center;
+
+    position: relative;
+
+    border: 2px solid red;
+}
+
+.colonne{
+    flex: 1;
+    border: 2px solide balck;
+}
+
+.col1{
+    position: relative;
+    border: 4px solide black;
+}
+
+.ligne-arriere{
+    border: 2px solid #C5A059;
+    display: flex;
+    flex-direction: row;
+    white-space: 100%;
+    height:100vh;
+
+    position: absolute;
+
+}
+
+.image1{
+    position: relative;
+   
+}
+
+.image2{
+    position: absolute;
+    
+}
+
+
