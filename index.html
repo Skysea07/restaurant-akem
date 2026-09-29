@@ -106,17 +106,16 @@
                 </svg>
             </div>
             <a href="index.html" class="active">Accueil</a>
-            <a href="essence.html">L'essence</a>
-            <a href="suggestion.html">Suggestion</a>
-            <a href="carte.html">La Carte</a>
-            <a href="reservation.html">Reservation</a>
-            <a href="commander.html">Commander</a>
-            <div class="cta"><a href="reservation.html">Reserver une table</a></div>
+            <a href="#essence">L'essence</a>
+            <a href="#suggestion">Suggestion</a>
+            <a href="#carte">La Carte</a>
+            <a href="#reservation">Reservation</a>
+            <div class="cta reserver-nav"><a href="#reservation">Reserver une table</a></div>
         </nav>
     </header>
 
     <main>
-        <!--Section Hero-->
+        <!--SECTION HERO-->
         <section class="hero">
             <div class="el-container">
 
@@ -143,7 +142,7 @@
                             </svg>
                         </div>
 
-                        <div class="vitre hover transform">
+                        <div class="vitre transform ">
                             <a href="reservation.html">RESERVER VOTRE TABLE</a>
                         </div>
                 </div>
@@ -185,17 +184,17 @@
             </div>
         </section>
 
-        <!--section essence-->
-        <section class="essence">
+        <!--SECTION ESSENCE-->
+        <section class="essence" id="essence">
             <div class="colonne col1">
-                <div class="image1">
+                <div >
                     <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?q=80&w=1200&auto=format&fit=crop" 
-                        alt="Intérieur élégant du restaurant Akem" width="200px">
+                        alt="Intérieur élégant du restaurant Akem" width="690px" height="468px" class="image1">
                 </div>
 
-                <div class="image2">
+                <div >
                     <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=800&auto=format&fit=crop" 
-                        alt="Dressage de plat gastronomique" width="200px">
+                        alt="Dressage de plat gastronomique" width="400px" height="297px" class="image2">
                 </div>
 
                 <div class="ligne-arriere">
@@ -205,12 +204,16 @@
             </div>
 
             <div class="colonne col2">
-                <h3>
-                    <svg viexBox="0 0 100 10" width="100" height="10" fill="none" stroke="black" troke-width="4">
-                        <line x1="0" y1="0" x2="98" y2="0"></line>
+
+                <h3 class="titre">
+                    <svg viewBox="0 0 60 5" width="60" height="5" fill="none" stroke="#c5a059" troke-width="2">
                         
+                         <rect x="0" y="0" width="50" height="2" fill="#c5a059"></rect>
+                         
                     </svg>
-                    Philosophie & Vision</h3>
+                    <span class="h3">Philosophie & Vision</span> 
+                </h3>
+                    
                 <h2>
                     L'Essence de la Gastronomie <br>
                     <span>Signée Akem</span>
@@ -227,9 +230,9 @@
                     un spectacle sensoriel inoubliable.
                 </p>
 
-                <div>
+                <div class="citation">
                     <p>
-                        <q>Cuisiner pour nos hôtes, c'est susciter une émotion pure dès la première bouchée.</q> 
+                        <q>Cuisiner pour nos hôtes, c'est susciter une émotion pure dès la première bouchée.</q> <br>
                         <span>— Le Chef Exécutif Akem</span> 
                     </p> 
                 </div>
@@ -242,6 +245,37 @@
                     </svg>
                 </div>
             </div>
+        </section>
+
+        <!--SECTION SUGGESTION-->
+        <section class="suggestion" id="suggestion">
+            <div>
+                <h3 class="h3"><span>Créations d'Exception</span></h3>
+
+                <h2>Les Suggestions du Chef</h2>
+
+                <p>
+                    Une sélection exclusive de nos plats emblématiques de saison, mariant subtilement textures d'exception et arômes intenses.
+                </p>
+            </div>
+
+            <div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=800&auto=format&fit=crop" 
+                                 alt="Filet de Bœuf Maturé">
+                </div>
+
+                <div>
+                     <img src="https://images.unsplash.com/photo-1534422298391-e4f8c172dddb?q=80&w=800&auto=format&fit=crop" 
+                                 alt="Homard Bleu Rôti" >
+                </div>
+
+                <div>
+                    <img src="https://images.unsplash.com/photo-1587314168485-3236d6710814?q=80&w=800&auto=format&fit=crop" 
+                                 alt="Sphère en Chocolat" >
+                </div>
+            </div>
+                
         </section>
 
 
