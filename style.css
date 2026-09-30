@@ -416,7 +416,98 @@ SECTION SUGGESTION
 =========================*/
 .suggestion{
     width: 100vw;
-    height: 100vh;
     
     background-color: #1B3B2B;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    padding:100px;
+
+    border:5px solid#9E3B27;
+}
+
+.suggestion-div-1{
+
+    margin-bottom: 20px;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.suggestion > .suggestion-div-1 > h3{
+    font-family: "Playfair Display", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.1;
+
+    margin-bottom: 25px;
+}
+
+.suggestion > .suggestion-div-1 > h2{
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 1.1;
+
+    margin-bottom: 25px;
+    color: #F8F5F0;
+}
+
+.suggestion > .suggestion-div-1 > p{
+    font-size: 16px;
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.75;
+
+    margin-bottom: 20px;
+    color:#F8F5F0;
+}
+
+.suggestion-div-2{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+
+    border: 2px solid #C5A059;
+}
+
+.suggestion-div-2 > div{
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    padding: 20px;
+
+    border: 2px solid black;
+
+    height: 700px;
+
+}
+
+.suggestion-div-2 > div > div:nth-child(1), .suggestion-div-2 > div > div:nth-child(2){
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+}
+
+.suggestion-div-2 > div > div:nth-child(1) > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 2px solid #c5a059;
+}
+
+.suggestion-div-2 > div > div:nth-child(2){
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    padding-top: 30px;
 }
