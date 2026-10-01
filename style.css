@@ -103,7 +103,7 @@ SECTION HERO
 ==========================*/
 
 .hero{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background: linear-gradient(rgba(20,20,20,0.65), rgba(20,20,20,0.65)), url('images/image-hero.avif');
 
@@ -247,7 +247,7 @@ SECTION ESSEMCE
 ============================*/
 
 .essence{
-    width: 100vw;
+    width: 100%;
     height: 100vh;
 
     display: flex;
@@ -428,7 +428,7 @@ SECTION ESSEMCE
 SECTION SUGGESTION
 =========================*/
 .suggestion{
-    width: 100vw;
+    width: 100%;
     
     background-color: #1B3B2B;
 
@@ -614,6 +614,7 @@ SECTION CARTE-MENU
     background-color: #121212;
    
     padding: 100px;
+    width: 100%;
 
 }
 
@@ -783,6 +784,10 @@ SECTION CARTE-MENU
 
 }
 
+
+* {
+  outline: 1px solid red !important;
+}
 
 
 
