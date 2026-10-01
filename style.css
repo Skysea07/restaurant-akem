@@ -173,6 +173,7 @@ SECTION HERO
 
 .transform:hover{
     transform: translateX(10px);
+    cursor: pointer;
 }
 
 
@@ -652,7 +653,20 @@ SECTION CARTE-MENU
     
 }
 
-.card-div-1 > div{
+.conteneur-categorie{
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    margin-bottom: 30px;
+    margin-top: 50px;
+    
+}
+
+.categorie{
     font-size: 16px;
     font-weight: 300;
     font-style: normal;
@@ -666,12 +680,21 @@ SECTION CARTE-MENU
     width: 50%;
 
     padding: 14px 24px;
-    border: 1px solid #c5a059;
+    border: 1px solid #C5A059;
     justify-content: center;
 
-    font-family: "Cormorand Garamont", serif;
+    /*font-family: "Cormorand Garamont", serif;*/
 
-    background-color: #01361dc4;
+    font-family: "Plus Jakarta Sans", serif;
+    font-weight: 700;
+
+    /*#f1f5f3c4*/
+    /*#01361dc4*/
+}
+
+.categorie:hover{
+    cursor: pointer;
+    color: #C5A059;
 }
 
 .card-div-2{
@@ -690,6 +713,11 @@ SECTION CARTE-MENU
     justify-content: space-between;
 
     padding: 14px 24px;
+}
+
+.card-div-2 > div:hover{
+    transform: scale(1.05);
+    cursor: pointer;
 }
 
 .card-div-2 > div > div{
@@ -714,6 +742,50 @@ SECTION CARTE-MENU
     font-size: 12px;
     color: #E0E0E0;
 }
+
+.complete-card-discover{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    
+    color: #F8F5F0;
+
+    margin-top: 50px;
+}
+
+.complete-card-discover > a {
+    text-decoration: none;
+}
+
+.complete-card-discover > a:hover{
+    color: #C5A059;
+}
+
+.complete-card-discover > a > div{
+     width: fit-content;
+     color: #F8F5F0;
+     text-transform: uppercase;
+     padding: 14px 24px;
+     background-color: #9E3B27;
+
+     font-family: 'Lucida Sans', serif;
+     font-size: 14px;
+     letter-spacing: 3px;
+}
+
+.complete-card-discover > a > div:hover{
+    color: #C5A059;
+    background-color: #602215;
+
+}
+
+
+
+
 
 
 
