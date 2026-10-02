@@ -20,7 +20,6 @@ HEADER
 ==================================*/
 
 .nav-bar{
-    width: 100%;
     height: 85px;
 
     position: fixed;
@@ -29,7 +28,6 @@ HEADER
     z-index: 9999;
 
     display: flex;
-
     align-items: center;
     justify-content: space-between;
 
@@ -38,16 +36,77 @@ HEADER
     box-sizing: border-box;
 
     background-color: #121212;
+
+    width: 100%;
     
 }
 
 .logo-container{
-    display: inline flex;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.logo-container a{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo-container >a > svg {
+  height: 100%;
+  width: auto;
+  display: block;
 }
 
 .logo-container:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
     cursor: pointer;
+}
+
+.nav-bar-ul{
+    display: flex;
+    align-items: center;
+    gap: 36px; 
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar-ul > li > a{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+
+    font-size: 13px;
+    font-weight: 500;
+
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #F8F5F0;
+    text-decoration: none;
+
+    transition: color 0.3s ease;
+
+    padding: 8px 0; 
+}
+
+.nav-bar-ul > li > a::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 1px;
+    background-color: #C5A059;
+    transition: width 0.3s ease;
+}
+
+.nav-bar-ul > li > a:hover, .nav-bar-ul > li > a.active{
+    color: #C5A059;
+}
+
+.nav-bar-ul > li > a::after, .nav-bar-ul > li > a.active::after{
+    width: 100%;
+
 }
 
 .en-ligne{
@@ -64,19 +123,12 @@ HEADER
     gap: 30px;
 }
 
-.nav-bar a, .cta a{
+.cta a{
     text-decoration: none;
     color: #ffffff;
     text-transform: uppercase;
     font-size: 14px;
-}
-
-.nav-bar a.active{
-    color: #C5A059;
-}
-
-.nav-bar a:hover{
-    color: #C5A059;
+    letter-spacing: 1.5px;
 }
 
 .cta{
@@ -89,9 +141,8 @@ HEADER
     align-items: center;
     justify-content: center;
     width: fit-content;
-    padding: 10px 24px;
+    padding: 14px 24px;
 }
-
 
 .reserver-nav:hover{
     transform: translateX(10px);
@@ -104,7 +155,7 @@ SECTION HERO
 
 .hero{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     background: linear-gradient(rgba(20,20,20,0.65), rgba(20,20,20,0.65)), url('images/image-hero.avif');
 
     background-repeat: no-repeat;
@@ -248,7 +299,7 @@ SECTION ESSEMCE
 
 .essence{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
 
     display: flex;
     gap: 30px;
@@ -784,11 +835,88 @@ SECTION CARTE-MENU
 
 }
 
+/* ==========================================================================
+   STYLISATION RESPONSIVE 
+   ========================================================================== */
+
+   /*==================================================
+   SMARTPHONE
+   ======================================================*/
+
+@media (max-width: 768px) {
+
+    /*================
+    HEADER
+    ====================*/
+
+    .nav-bar {
+        height: 60px; 
+        padding: 0 16px;
+    }
+
+    .logo-container{
+        height: 50px;
+    }
+
+    .nav-bar-nav{
+        display: none;
+    }
+
+    .cta {
+        padding: 8px 14px;
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+
+    /*===================
+    HERO
+    ====================*/
+
+    .hero{
+        padding-top: 100px;
+        padding-bottom: 50px;
+        min-height: 100dvh;
+    }
+
+    /*=======================
+    ESSENCE
+    ===========================*/
+
+    .essence {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        min-height: 100dvh;
+    }
+
+}
 
 
+/*==================================================
+   TABLETTES ET PETITS ECRAN
+   ======================================================*/
 
+@media (max-width: 1024px) {
+  .nav-bar {
+    height: 70px; /* Légère réduction de la hauteur */
+    padding: 0 4%;
+  }
 
+  .logo-container {
+    height: 60px; /* Le logo s'ajuste aux 70px de hauteur */
+  }
 
+  .nav-bar-ul {
+    gap: 20px; /* Espacement plus serré entre les liens */
+  }
 
+  .nav-bar-ul > li > a {
+    font-size: 12px; /* Réduction subtile de la typographie */
+  }
+
+  .cta {
+    padding: 10px 18px;
+    font-size: 11px;
+  }
+}
 
 

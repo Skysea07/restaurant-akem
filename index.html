@@ -47,59 +47,60 @@
 </head>
 <body>
 
-    <header>
-        <nav class="nav-bar">
-            <div class="logo-container" style="max-width: 450px;">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 240" width="100%" height="100%">
-                    <defs>
-                        <style>
-                        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&amp;family=Montserrat:wght@400;500&amp;display=swap');
+    <header class="nav-bar">
 
-                        .bg {
-                            fill: #121212;
-                        }
-                        .circle-emblem {
-                            fill: none;
-                            stroke: #c5a059;
-                            stroke-width: 1.5;
-                        }
-                        .letter-a {
-                            font-family: 'Cinzel', 'Playfair Display', Georgia, serif;
-                            font-size: 46px;
-                            font-weight: 600;
-                            fill: #c5a059;
-                            text-anchor: middle;
-                            dominant-baseline: central;
-                        }
-                        .title-restaurant {
-                            font-family: 'Cinzel', 'Playfair Display', Georgia, serif;
-                            font-size: 42px;
-                            font-weight: 700;
-                            fill: #ffffff;
-                            letter-spacing: 3.5px;
-                        }
-                        .title-akem {
-                            font-family: 'Cinzel', 'Playfair Display', Georgia, serif;
-                            font-size: 42px;
-                            font-weight: 700;
-                            fill: #c5a059;
-                            letter-spacing: 3.5px;
-                        }
-                        .subtitle {
-                            font-family: 'Montserrat', sans-serif;
-                            font-size: 19px;
-                            font-weight: 400;
-                            fill: #c5a059;
-                            letter-spacing: 8.5px;
-                        }
-                        </style>
+        <div class="logo-container">
+            <a href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 240">
+                    <defs>
+                            <style>
+                            @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&amp;family=Montserrat:wght@400;500&amp;display=swap');
+
+                            .bg {
+                                fill: #121212;
+                            }
+                            .circle-emblem {
+                                fill: none;
+                                stroke: #c5a059;
+                                stroke-width: 1.5;
+                            }
+                            .letter-a {
+                                font-family: 'Cinzel', 'Playfair Display', Georgia, serif;
+                                font-size: 46px;
+                                font-weight: 600;
+                                fill: #c5a059;
+                                text-anchor: middle;
+                                dominant-baseline: central;
+                            }
+                            .title-restaurant {
+                                font-family: 'Cinzel', 'Playfair Display', Georgia, serif;
+                                font-size: 42px;
+                                font-weight: 700;
+                                fill: #ffffff;
+                                letter-spacing: 3.5px;
+                            }
+                            .title-akem {
+                                font-family: 'Cinzel', 'Playfair Display', Georgia, serif;
+                                font-size: 42px;
+                                font-weight: 700;
+                                fill: #c5a059;
+                                letter-spacing: 3.5px;
+                            }
+                            .subtitle {
+                                font-family: 'Montserrat', sans-serif;
+                                font-size: 19px;
+                                font-weight: 400;
+                                fill: #c5a059;
+                                letter-spacing: 8.5px;
+                            }
+                            </style>
                     </defs>
 
                     <!-- Arrière-plan sombre) -->
                     <rect class="bg" width="100%" height="100%" rx="8"/>
 
                     <!-- Emblème Cercle + Lettre A -->
-                    <g transform="translate(120, 120)">
+                     <g transform="translate(120, 120)">
                         <circle class="circle-emblem" r="54" />
                         <text class="letter-a" y="-2">A</text>
                     </g>
@@ -113,19 +114,26 @@
                     <!-- Sous-titre HAUTE GASTRONOMIE -->
                     <text x="212" y="158" class="subtitle">HAUTE GASTRONOMIE</text>
                 </svg>
-            </div>
-            <a href="index.html" class="active">Accueil</a>
-            <a href="#essence">L'essence</a>
-            <a href="#suggestion">Suggestion</a>
-            <a href="#carte">La Carte</a>
-            <a href="#reservation">Reservation</a>
-            <div class="cta reserver-nav"><a href="#reservation">Reserver une table</a></div>
+            </a>          
+        </div>
+
+        <nav class="nav-bar-nav">
+            <ul class="nav-bar-ul">
+                <li><a href="#hero" class="active">Accueil</a></li>
+                <li><a href="#essence">L'essence</a></li>
+                <li><a href="#suggestion">Suggestion</a></li>
+                <li><a href="#carte">La Carte</a></li>
+                <li><a href="#reservation">Reservation</a></li>
+            </ul>
         </nav>
+
+        <div class="cta reserver-nav"><a href="#reservation">Reserver une table</a></div>
+    
     </header>
 
     <main>
         <!--SECTION HERO-->
-        <section class="hero">
+        <section class="hero" id="hero">
             <div class="el-container">
 
                 <div class="exp vitre">
