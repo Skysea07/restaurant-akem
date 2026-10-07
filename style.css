@@ -842,13 +842,13 @@ SECTION CARTE-MENU
    /*==================================================
    SMARTPHONE
    ======================================================*/
-
-@media (max-width: 768px) {
+/*
+@media (max-width: 768px) {*/
 
     /*================
     HEADER
     ====================*/
-
+/*
     .nav-bar {
         height: 60px; 
         padding: 0 16px;
@@ -867,20 +867,20 @@ SECTION CARTE-MENU
         font-size: 10px;
         letter-spacing: 1px;
     }
-
+*/
     /*===================
     HERO
-    ====================*/
+    ====================
 
     .hero{
         padding-top: 100px;
         padding-bottom: 50px;
         min-height: 100dvh;
-    }
+    }*/
 
     /*=======================
     ESSENCE
-    ===========================*/
+    ===========================
 
     .essence {
         padding-top: 50px;
@@ -888,29 +888,30 @@ SECTION CARTE-MENU
         min-height: 100dvh;
     }
 
-}
+}*/
 
 
 /*==================================================
    TABLETTES ET PETITS ECRAN
    ======================================================*/
-
+/*
 @media (max-width: 1024px) {
   .nav-bar {
     height: 70px; /* Légère réduction de la hauteur */
-    padding: 0 4%;
-  }
+    /*padding: 0 4%;
+  }*/
 
+  /*
   .logo-container {
     height: 60px; /* Le logo s'ajuste aux 70px de hauteur */
-  }
+ /* } 
 
   .nav-bar-ul {
-    gap: 20px; /* Espacement plus serré entre les liens */
+    gap: 20px;  Espacement plus serré entre les liens 
   }
 
   .nav-bar-ul > li > a {
-    font-size: 12px; /* Réduction subtile de la typographie */
+    font-size: 12px;  Réduction subtile de la typographie 
   }
 
   .cta {
@@ -918,5 +919,7 @@ SECTION CARTE-MENU
     font-size: 11px;
   }
 }
+
+*/
 
 
