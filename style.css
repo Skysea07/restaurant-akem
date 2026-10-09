@@ -580,7 +580,7 @@ SECTION SUGGESTION
     display: flex;
     flex-direction: column;
 
-    
+    height: 600px;
 
     border: 1px solid #C5A059;
     
@@ -1050,6 +1050,8 @@ SECTION CARTE-MENU
      .suggestion-div-2{
         grid-template-columns: 1fr;
         gap: 30px;
+
+        height: fit-content;
     }
 
 
