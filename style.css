@@ -580,7 +580,7 @@ SECTION SUGGESTION
     display: flex;
     flex-direction: column;
 
-    height: 600px;
+    height: auto;
 
     border: 1px solid #C5A059;
     
@@ -1014,7 +1014,7 @@ SECTION CARTE-MENU
     }
 
     .col2{
-        padding: 0;
+        padding: 20px;
         width: 100%;
         margin: 20px 0;
         gap: 20px;
