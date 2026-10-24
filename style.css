@@ -1051,7 +1051,7 @@ SECTION CARTE-MENU
         grid-template-columns: 1fr;
         gap: 30px;
 
-        height: fit-content;
+       /* height: fit-content; */
     }
 
 
@@ -1084,35 +1084,80 @@ SECTION CARTE-MENU
     }
 
 }
+
 /*==================================================
    TABLETTES ET PETITS ECRAN
    ======================================================*/
-/*
+
 @media (max-width: 1024px) {
   .nav-bar {
     height: 70px; /* Légère réduction de la hauteur */
-    /*padding: 0 4%;
-  }*/
+    padding: 0 4%;
+  }
 
-  /*
+  
   .logo-container {
     height: 60px; /* Le logo s'ajuste aux 70px de hauteur */
- /* } 
+  } 
 
   .nav-bar-ul {
-    gap: 20px;  Espacement plus serré entre les liens 
+    gap: 20px;  /*Espacement plus serré entre les liens */
   }
 
   .nav-bar-ul > li > a {
-    font-size: 12px;  Réduction subtile de la typographie 
+    font-size: 12px;  /*Réduction subtile de la typographie*/
   }
 
   .cta {
     padding: 10px 18px;
     font-size: 11px;
   }
+
+   /*=======================
+    ESSENCE
+    ===========================*/
+
+    .essence {
+        padding: 50px 0;
+
+    }
+
+    .image2, .ligne-arriere{
+        display: none;
+    }
+
+    .col2{
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .col1 > div:nth-child(2){
+        border: none;
+    }
+
+    .col2 h2{
+        text-align: left;
+    }
+
+   
 }
 
-*/
+
+
+@media (max-width: 1288px){
+    .image2{
+        display: none;
+    }
+
+    .col2 h2{
+        text-align: left;
+    }
+
+    .col1 > div:nth-child(2){
+        border: none;
+    }
+}
+
+
 
 
